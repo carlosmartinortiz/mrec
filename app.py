@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1u6pEWBuvHA37lJO4uso9kUUxiOcQu26c
 """
 
-!pip install -q -U schedule
+#!pip install -q -U schedule
 
 import pandas as pd
 import schedule
