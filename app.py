@@ -32,7 +32,7 @@ def job_with_argument(name):
     #streamlit_js_eval(js_expressions="parent.window.location.reload()")
 
     # Título de la aplicación
-    st.title("Movie Recommendation Engine - Monitor (" + fecha_ultima_revision + ")")
+    st.title("Movie Recommendation Engine - Monitor")
     global solicitudes_recomendacion
     global recomendaciones_enviadas
     # Contadores iniciales
@@ -44,15 +44,16 @@ def job_with_argument(name):
         #st.header("Solicitudes de Recomendación")
         # Crear una caja de texto para las solicitudes de recomendación
         st.image("https://cdn.icon-icons.com/icons2/491/PNG/512/email-inbox_48097.png", caption="Total de Solicitudes de Recomendación pendientes de revisar", width=200)
-        m_solicitudes_recomendacion = st.text_input("En revisión:", value=str(solicitudes_recomendacion),max_chars=9)
+        #m_solicitudes_recomendacion = st.text_input("En revisión "+ "(" + fecha_ultima_revision + "):", value=str(solicitudes_recomendacion),max_chars=9)
+        st.caption("En revisión "+ "(" + fecha_ultima_revision + "):" + str(solicitudes_recomendacion))
 
     # Crear un contenedor de recomendaciones enviadas
     with st.container():
         #st.header("Recomendaciones Enviadas")
         # Crear una caja de texto para las recomendaciones enviadas
         st.image("https://img.freepik.com/vector-gratis/enviar-concepto-correo-electronico_24908-60321.jpg?w=740&t=st=1726111970~exp=1726112570~hmac=3cb83788ddf6b7263132dd50cbfb760f3ba79c9d2707e51041a8b5e4e2f35861", caption="Total de Recomendaciones respondidas recientemente", width=200)
-        m_recomendaciones_enviadas = st.text_input("Respondidas:", value=str(recomendaciones_enviadas),max_chars=9)
-
+        #m_recomendaciones_enviadas = st.text_input("Respondidas:", value=str(recomendaciones_enviadas),max_chars=9)
+        st.caption("En revisión "+ "(" + fecha_ultima_revision + "):" + str(solicitudes_recomendacion))
 
     # Lógica para actualizar los contadores según sea necesario
     # Aquí puedes agregar la lógica para manejar las solicitudes y recomendaciones
