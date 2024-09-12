@@ -29,7 +29,7 @@ def job_with_argument(name):
     now = datetime.now()
     fecha_ultima_revision = now.strftime('Día :%d-%m-%Y, Hora: %H:%M:%S')
     #Reload Web Page
-    streamlit_js_eval(js_expressions="parent.window.location.reload()")
+    #streamlit_js_eval(js_expressions="parent.window.location.reload()")
 
     # Título de la aplicación
     st.title("Movie Recommendation Engine - Monitor (" + fecha_ultima_revision + ")")
