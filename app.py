@@ -36,5 +36,3 @@ st.image("https://example.com/salida.png", caption="Disparador de flechas de sal
 
 # Lógica para actualizar los contadores según sea necesario
 # Aquí puedes agregar la lógica para manejar las solicitudes y recomendaciones
-
-streamlit run app.py
