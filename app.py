@@ -20,17 +20,17 @@ recomendaciones_enviadas = 0
 
 # Crear un contenedor de solicitudes de recomendación
 with st.container():
-    st.header("Solicitudes de Recomendación")
+    #st.header("Solicitudes de Recomendación")
     # Crear una caja de texto para las solicitudes de recomendación
-    st.image("https://cdn.icon-icons.com/icons2/491/PNG/512/email-inbox_48097.png", caption="Canasto de entrada", width=200)
-    solicitudes_recomendacion = st.text_input("Total de Solicitudes de Recomendación pendientes de revisar", value=str(solicitudes_recomendacion))
+    st.image("https://cdn.icon-icons.com/icons2/491/PNG/512/email-inbox_48097.png", caption="Total de Solicitudes de Recomendación pendientes de revisar", width=200)
+    solicitudes_recomendacion = st.text_input("", value=str(solicitudes_recomendacion))
 
 # Crear un contenedor de recomendaciones enviadas
 with st.container():
-    st.header("Recomendaciones Enviadas")
+    #st.header("Recomendaciones Enviadas")
     # Crear una caja de texto para las recomendaciones enviadas
-    st.image("https://img.freepik.com/vector-gratis/enviar-concepto-correo-electronico_24908-60321.jpg?w=740&t=st=1726111970~exp=1726112570~hmac=3cb83788ddf6b7263132dd50cbfb760f3ba79c9d2707e51041a8b5e4e2f35861", caption="Disparador de flechas de salida", width=200)
-    recomendaciones_enviadas = st.text_input("Total de Recomendaciones Enviadas recientemente", value=str(recomendaciones_enviadas))
+    st.image("https://img.freepik.com/vector-gratis/enviar-concepto-correo-electronico_24908-60321.jpg?w=740&t=st=1726111970~exp=1726112570~hmac=3cb83788ddf6b7263132dd50cbfb760f3ba79c9d2707e51041a8b5e4e2f35861", caption="Total de Recomendaciones Enviadas recientemente", width=200)
+    recomendaciones_enviadas = st.text_input("", value=str(recomendaciones_enviadas))
 
 
 # Lógica para actualizar los contadores según sea necesario
