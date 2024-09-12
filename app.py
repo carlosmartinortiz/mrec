@@ -22,17 +22,17 @@ recomendaciones_enviadas = 0
 with st.container():
     st.header("Solicitudes de Recomendación")
     # Crear una caja de texto para las solicitudes de recomendación
-    solicitudes_recomendacion = st.text_input("Total de Solicitudes de Recomendación", value=str(solicitudes_recomendacion))
+    st.image("https://cdn.icon-icons.com/icons2/491/PNG/512/email-inbox_48097.png", caption="Canasto de entrada", width=200)
+    solicitudes_recomendacion = st.text_input("Total de Solicitudes de Recomendación pendientes de revisar", value=str(solicitudes_recomendacion))
 
 # Crear un contenedor de recomendaciones enviadas
 with st.container():
     st.header("Recomendaciones Enviadas")
     # Crear una caja de texto para las recomendaciones enviadas
-    recomendaciones_enviadas = st.text_input("Total de Recomendaciones Enviadas", value=str(recomendaciones_enviadas))
+    st.image("https://img.freepik.com/vector-gratis/enviar-concepto-correo-electronico_24908-60321.jpg?w=740&t=st=1726111970~exp=1726112570~hmac=3cb83788ddf6b7263132dd50cbfb760f3ba79c9d2707e51041a8b5e4e2f35861", caption="Disparador de flechas de salida", width=200)
+    recomendaciones_enviadas = st.text_input("Total de Recomendaciones Enviadas recientemente", value=str(recomendaciones_enviadas))
 
-# Visuales adicionales para representar la entrada y salida
-st.image("https://example.com/entrada.png", caption="Canasto de entrada", width=200)
-st.image("https://example.com/salida.png", caption="Disparador de flechas de salida", width=200)
 
 # Lógica para actualizar los contadores según sea necesario
 # Aquí puedes agregar la lógica para manejar las solicitudes y recomendaciones
+
