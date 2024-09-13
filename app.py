@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1NkVceasbsElMtZk3JANXxcSh7Q4PveT-
 """
 
-!pip install -q -U streamlit
-!pip install -q -U schedule
-!pip install -q -U streamlit_js_eval
+#!pip install -q -U streamlit
+#!pip install -q -U schedule
+#!pip install -q -U streamlit_js_eval
 
 import pandas as pd
 import schedule
